@@ -12,47 +12,57 @@
     <title>Torden Git Task</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><strong>Torden Team</strong></li>
-      </ul>
-      <ul>
-        <li><a href="/" >Inicio</a></li>
-        <li><a href="#" role="button">Contactos</a></li>
-        <li><a href="personas.html">Personas</a></li>
-      </ul>
-    </nav>
-    <article>
-      <header>¿Quiéres contactarnos?</header>
-      <form>
+    <main class="container">
+      <nav>
+        <ul>
+          <li><strong>Torden Team</strong></li>
+        </ul>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#" role="button">Contactos</a></li>
+          <li><a href="personas.html">Personas</a></li>
+        </ul>
+      </nav>
+      <article>
+        <header>¿Quiéres contactarnos?</header>
+        <form>
+          <div class="grid">
+            <label for="firstname">
+              Nombre
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Nombre"
+                required
+              />
+            </label>
 
-        <div class="grid">
-      
-      
-          <label for="firstname">
-            Nombre
-            <input type="text" id="firstname" name="firstname" placeholder="Nombre" required>
-          </label>
-      
-          <label for="lastname">
-            Apellido
-            <input type="text" id="lastname" name="lastname" placeholder="Apellido" required>
-          </label>
-      
-        </div>
-      
-        
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-        <small>No compartiremos tus datos con nadie.</small>
-      
-        
-        <button type="submit">Enviar</button>
-      
-      </form>
-      
-    </article>
+            <label for="lastname">
+              Apellido
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Apellido"
+                required
+              />
+            </label>
+          </div>
 
-    
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <small>No compartiremos tus datos con nadie.</small>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </main>
   </body>
 </html>
